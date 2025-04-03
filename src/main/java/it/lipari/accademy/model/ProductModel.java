@@ -15,5 +15,5 @@ public class ProductModel {
     private Double price;
     private String description;
     private String img;
-    /*  private byte[] imgBackground;*/
+    private String imgBackground;
 }

@@ -20,15 +20,15 @@ public class ProductEntity {
     private String title;
     @Column
     private Double price;
-    @Column
+    @Column(columnDefinition = "LONGTEXT")
     private String description;
 
     @Lob
     @Column(columnDefinition = "LONGTEXT")
     private String img;
 
-/*    @Lob
-    @Column(columnDefinition = "TEXT")
-    private byte[] imgBackground;*/
+    @Lob
+    @Column(columnDefinition = "LONGTEXT")
+    private String imgBackground;
 
 }

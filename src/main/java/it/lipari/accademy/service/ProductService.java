@@ -40,7 +40,7 @@ public class ProductService {
         newProduct.setPrice(model.getPrice());
         newProduct.setDescription(model.getDescription());
         newProduct.setImg(model.getImg());
-        /*   newProduct.setImgBackground(model.getImgBackground());*/
+        newProduct.setImgBackground(model.getImgBackground());
         return productRepository.save(newProduct);
 
     }
@@ -54,12 +54,13 @@ public class ProductService {
             updateProduct.setPrice(model.getPrice());
             updateProduct.setDescription(model.getDescription());
             updateProduct.setImg(model.getImg());
+            updateProduct.setImgBackground(model.getImgBackground());
             return productRepository.save(updateProduct);
         } else {
             return null;
         }
     }
-    
+
 }
 
 
